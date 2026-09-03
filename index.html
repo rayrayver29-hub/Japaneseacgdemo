@@ -7609,7 +7609,7 @@ function _specAudioHTML(text, includeSlow = true) {
 }
 function _specPreferredImagePath(src) {
   const raw = String(src || '');
-  if (raw.includes('/jp-gym-level1/')) return raw;
+  if (raw.includes('/jp-gym-level1/') || raw.includes('/jp-anime-level1/')) return raw;
   return raw.replace(/\.(png|jpg|jpeg)$/i, '.webp');
 }
 function _specImageHTML(src, alt = '', extraAttrs = '') {
